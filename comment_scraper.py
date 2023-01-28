@@ -4,14 +4,18 @@ import numpy as np
 import praw
 import csv
 
-CLIENT_ID = "xcEldpw5WkBnvIMRV_54Nw"
-SECRET_KEY = "eqcic_FXSlozVojaik8HtwFIuMDnLA"
+with open('passwords/client_id.txt', 'r') as f:
+    CLIENT_ID = f.read()
 
+with open('passwords/secret_key.txt', 'r') as f:
+    SECRET_KEY = f.read()
+
+print
 # auth = requests.auth.HTTPBasicAuth(CLIENT_ID, SECRET_KEY)
 
 # This is my password please don't share ahhahah
 # Place this comment_scraper.py file in the same directory as your csv file
-with open('pw.txt', 'r') as f:
+with open('passwords/pw.txt', 'r') as f:
     pw = f.read()
 
 reddit = praw.Reddit(client_id=CLIENT_ID, client_secret=SECRET_KEY, user_agent="glowguide")
