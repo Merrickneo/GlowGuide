@@ -12,7 +12,6 @@ with open('passwords/secret_key.txt', 'r') as f:
 
 # auth = requests.auth.HTTPBasicAuth(CLIENT_ID, SECRET_KEY)
 
-# This is my password please don't share ahhahah
 # Place this comment_scraper.py file in the same directory as your csv file
 with open('passwords/pw.txt', 'r') as f:
     pw = f.read()
